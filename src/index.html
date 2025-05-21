@@ -181,32 +181,5 @@
     </div>
     <footer class="footer"></footer>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuLinks = document.querySelectorAll(
-        ".hero-section__header__icons a"
-      );
-      const menuButton = menuLinks[2];
-      const burgerMenu = document.getElementById("burgerMenu");
-      const closeBtn = document.getElementById("closeMenuBtn");
-
-      menuButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        burgerMenu.classList.add("active");
-        document.body.classList.add("menu-open");
-      });
-
-      closeBtn.addEventListener("click", () => {
-        burgerMenu.classList.remove("active");
-        document.body.classList.remove("menu-open");
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!burgerMenu.contains(e.target) && !menuButton.contains(e.target)) {
-          burgerMenu.classList.remove("active");
-          document.body.classList.remove("menu-open");
-        }
-      });
-    });
-  </script>
+  <script defer src="./scripts/main.js"></script>
 </html>
