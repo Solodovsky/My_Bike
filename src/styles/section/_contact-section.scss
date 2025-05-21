@@ -1,0 +1,78 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.contact {
+  @include section;
+  max-width: 800px;
+  margin: 0 auto 164px;
+
+  @media (max-width: 744px) {
+    margin: 0 auto 102px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 auto 120px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 198px;
+
+    @media (max-width: 744px) {
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+
+    @media (max-width: 500px) {
+      font-size: 32px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 411px;
+
+    @media (max-width: 744px) {
+      max-width: 288px;
+    }
+    @media (max-width: 500px) {
+      max-width: 280px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 237px;
+    gap: 24px;
+    color: $color-white;
+
+    &__phone {
+      line-height: 140%;
+    }
+
+    &__email {
+      line-height: 140%;
+    }
+
+    &__address {
+      line-height: 140%;
+    }
+  }
+}

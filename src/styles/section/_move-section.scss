@@ -1,0 +1,48 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.move {
+  @include section;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: $margin-bottom-desc;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 92px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+    max-width: 411px;
+
+    @media (max-width: 744px) {
+      font-size: 48px;
+      font-weight: bold;
+      max-width: 288px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 32px;
+      font-weight: bold;
+      max-width: 280px;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    max-width: 500px;
+    font-size: 23px;
+    color: $color-white;
+
+    @media (max-width: 744px) {
+      max-width: 288px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.button {
+  @include section;
+  @include flex-center;
+
+  margin: 0 auto 140px;
+  width: max-content;
+  padding: 15px 132px;
+  height: 56px;
+  background-color: $color-white;
+  color: $color-black;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+  @media (max-width: 744px) {
+    padding: 15px 123px;
+    margin: 0 auto 120px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 15px 108px;
+    margin: 0 auto 80px;
+  }
+}
+
+.button:hover {
+  box-shadow: 5px 4px 16px 0px rgba(232, 232, 240, 0.4);
+}

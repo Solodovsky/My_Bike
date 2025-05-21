@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bike</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="use-credentials"
+    />
+
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+  <body class="menu-open">
+    <div class="hero-section">
+      <header class="hero-section__header">
+        <a href="#">
+          <img
+            class="hero-section__header__logo"
+            src="./images/icons/logo.png"
+            alt="logo"
+          />
+        </a>
+        <div class="hero-section__header__icons">
+          <a href="#"><img src="./images/icons/phone_number.png" /></a>
+          <a href="#"><img src="./images/icons/phone.png" /></a>
+          <a href="#"><img src="./images/icons/menu.png" /></a>
+        </div>
+      </header>
+      <h1 class="title">Take the Streets</h1>
+    </div>
+    <div class="landing">
+      <section class="move">
+        <h2 class="move__title">Move Free</h2>
+        <p class="move__text">
+          Shift your ride, not gears. Find the fastest way to move in the city
+          as the bike adapts intuitively to power the speed you need.
+        </p>
+      </section>
+      <nav class="burger-menu" id="burgerMenu">
+        <div class="burger-menu__header">
+          <img
+            src="./images/icons/Burger_logo.png"
+            alt="Logo"
+            class="burger-menu__logo"
+          />
+          <button
+            class="burger-menu__close"
+            id="closeMenuBtn"
+            aria-label="Close menu"
+          >
+            <img
+              src="./images/icons/Close_icon.png"
+              alt="Close"
+              class="burger-menu__close-icon"
+            />
+          </button>
+        </div>
+        <ul class="burger-menu__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Compare bikes</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="burger-menu__bottom">
+          <p class="burger-menu__phone">+1234 5555–55–55</p>
+          <a href="#" class="burger-menu__test-ride">BOOK A TEST RIDE</a>
+        </div>
+      </nav>
+      <section class="compare">
+        <h2 class="compare__title">Compare Bikes</h2>
+        <div class="compare__bikes">
+          <div class="bike-card">
+            <img
+              src="./images/card_bike1.png"
+              alt="Sporty 4"
+              class="bike-card__img"
+            />
+            <h3 class="bike-card__name">Sporty 4</h3>
+            <p class="bike-card__desc">
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+            <p class="bike-card__price">$2 590</p>
+          </div>
+          <div class="bike-card">
+            <img
+              src="./images/card_bike2.png"
+              alt="Ride in town ST"
+              class="bike-card__img"
+            />
+            <h3 class="bike-card__name">Ride in town ST</h3>
+            <p class="bike-card__desc">
+              An open frame for an upright riding position as the most
+              comfortable ride in town.
+            </p>
+            <p class="bike-card__price">$2 590</p>
+          </div>
+          <div class="bike-card">
+            <img
+              src="./images/card_bike3.png"
+              alt="Agile ride 3"
+              class="bike-card__img"
+            />
+            <h3 class="bike-card__name">Agile ride 3</h3>
+            <p class="bike-card__desc">
+              The lightweight frame that has earned its street tread as a sleek,
+              agile ride.
+            </p>
+            <p class="bike-card__price">$2 090</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <h2 class="details__title">The Details</h2>
+        <div class="details__images">
+          <img src="./images/details_section1.png" alt="" />
+          <img src="./images/details_section2.png" alt="" />
+        </div>
+        <h3 class="details__item">Auto Unlock</h3>
+        <p class="details__item-p">
+          The app senses when you're nearby to unlock automatically. GPS
+          tracking so you know where your bike is and can track it anytime.
+        </p>
+
+        <div class="details__images">
+          <img src="./images/details_section3.png" alt="" />
+          <img src="./images/details_section4.png" alt="" />
+        </div>
+        <h3 class="details__item">Range & Integrated lights</h3>
+        <p class="details__item-p">
+          The removable battery has up to 70km battery autonomy and weighs only
+          2.4 kg. Lights integrated into the frame give you always-on visibility
+          day and night.
+        </p>
+
+        <div class="details__images">
+          <img src="./images/details_section5.png" alt="" />
+          <img src="./images/details_section6.png" alt="" />
+        </div>
+        <h3 class="details__item">Hydraulic disc brakes & Lightweight</h3>
+        <p class="details__item-p">
+          Brakes with total stopping power the second you make contact. The
+          removable battery has up to 70km battery autonomy and weighs only 2.4
+          kg. Lights integrated into the frame give you always-on visibility day
+          and night.
+        </p>
+        <button class="button">Explore</button>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__title">Contact us</h2>
+        <div class="contact__block">
+          <form class="contact__form">
+            <input class="input" placeholder="Name" />
+            <input class="input" placeholder="Email" />
+            <textarea class="textarea" placeholder="Message"></textarea>
+            <button class="button">Send</button>
+          </form>
+          <div class="contact__info">
+            <div class="contact__info__phone">
+              <p>Phone:</p>
+              <p>+1 234 5555–55–55</p>
+            </div>
+            <div class="contact__info__email">
+              <p>Email:</p>
+              <p>hello@mymail.com</p>
+            </div>
+            <div class="contact__info__address">
+              <p>Address:</p>
+              <p>400 First Ave, Suite 700, Minneapolis, MN 55401</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll(
+        ".hero-section__header__icons a"
+      );
+      const menuButton = menuLinks[2];
+      const burgerMenu = document.getElementById("burgerMenu");
+      const closeBtn = document.getElementById("closeMenuBtn");
+
+      menuButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        burgerMenu.classList.add("active");
+        document.body.classList.add("menu-open");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        burgerMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!burgerMenu.contains(e.target) && !menuButton.contains(e.target)) {
+          burgerMenu.classList.remove("active");
+          document.body.classList.remove("menu-open");
+        }
+      });
+    });
+  </script>
+</html>

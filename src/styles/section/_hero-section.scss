@@ -1,0 +1,79 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.hero-section {
+  background: center / cover no-repeat url("../images/hero_section_bg.png");
+  height: 710px;
+  margin: 0 auto;
+  margin-bottom: $margin-bottom-desc;
+  max-width: 1260px;
+
+  @media (max-width: 744px) {
+    height: 628px;
+    margin-bottom: $margin-bottom-desc;
+  }
+
+  @media (max-width: 500px) {
+    height: 480px;
+    margin-bottom: 60px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 120px;
+    height: 128px;
+
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 36px 72px;
+      max-width: 744px;
+      margin: 0 auto;
+      height: 128px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 24px 20px;
+    }
+
+    &__icons {
+      @include flex-center;
+      gap: 32px;
+
+      @media (max-width: 744px) {
+        a:first-child {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        @include flex-center;
+        gap: 27px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 80px;
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    padding: 300px 294px 203px 294px;
+
+    @media (max-width: 744px) {
+      font-size: 64px;
+      font-weight: bold;
+      color: $color-white;
+      padding: 306px 72px 130px 72px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 36px;
+      font-weight: bold;
+      color: $color-white;
+      padding: 270px 20px 88px 20px;
+    }
+  }
+}

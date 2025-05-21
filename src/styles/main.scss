@@ -1,0 +1,37 @@
+@import "./scss/index";
+@import "./section/hero-section";
+@import "./section/burger-menu";
+@import "./section/move-section";
+@import "./section/compare-section";
+@import "./section/details-section";
+@import "./block/button";
+@import "./section/contact-section";
+@import "./block/input";
+@import "./block/textarea";
+@import "./section/footer";
+
+body {
+  background: $color-black;
+  font-family: "Poppins", sans-serif;
+  color: $color-white;
+}
+
+.menu-open {
+  overflow: hidden;
+}
+
+.landing {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 120px;
+
+  @media (max-width: 768px) {
+    max-width: 768px;
+    padding: 0 72px;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 500px;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass-embedded": "^1.88.0",
+    "scss": "^0.2.4",
+    "vite": "^6.3.5"
+  }
+}
