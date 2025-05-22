@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="styles/main.scss" />
   </head>
-  <body class="menu-open">
+  <body class="">
     <div class="hero-section">
       <header class="hero-section__header">
         <a href="#">
@@ -51,6 +51,7 @@
             class="burger-menu__close"
             id="closeMenuBtn"
             aria-label="Close menu"
+            type="submit"
           >
             <img
               src="./images/icons/Close_icon.png"
@@ -59,15 +60,17 @@
             />
           </button>
         </div>
-        <ul class="burger-menu__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Compare bikes</a></li>
-          <li><a href="#">Details</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
+        <nav>
+          <ul class="burger-menu__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Compare bikes</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
         <div class="burger-menu__bottom">
-          <p class="burger-menu__phone">+1234 5555–55–55</p>
+          <a class="burger-menu__phone">+1234 5555–55–55</a>
           <a href="#" class="burger-menu__test-ride">BOOK A TEST RIDE</a>
         </div>
       </nav>
@@ -119,8 +122,8 @@
       <section class="details">
         <h2 class="details__title">The Details</h2>
         <div class="details__images">
-          <img src="./images/details_section1.png" alt="" />
-          <img src="./images/details_section2.png" alt="" />
+          <img src="./images/details_section1.png" alt="Phone" />
+          <img src="./images/details_section2.png" alt="Holder" />
         </div>
         <h3 class="details__item">Auto Unlock</h3>
         <p class="details__item-p">
@@ -129,8 +132,8 @@
         </p>
 
         <div class="details__images">
-          <img src="./images/details_section3.png" alt="" />
-          <img src="./images/details_section4.png" alt="" />
+          <img src="./images/details_section3.png" alt="backlight" />
+          <img src="./images/details_section4.png" alt="headlight" />
         </div>
         <h3 class="details__item">Range & Integrated lights</h3>
         <p class="details__item-p">
@@ -140,8 +143,8 @@
         </p>
 
         <div class="details__images">
-          <img src="./images/details_section5.png" alt="" />
-          <img src="./images/details_section6.png" alt="" />
+          <img src="./images/details_section5.png" alt="brakes" />
+          <img src="./images/details_section6.png" alt="stand" />
         </div>
         <h3 class="details__item">Hydraulic disc brakes & Lightweight</h3>
         <p class="details__item-p">
@@ -150,7 +153,7 @@
           kg. Lights integrated into the frame give you always-on visibility day
           and night.
         </p>
-        <button class="button">Explore</button>
+        <button class="button" type="submit">Explore</button>
       </section>
 
       <section class="contact">
@@ -165,15 +168,17 @@
           <div class="contact__info">
             <div class="contact__info__phone">
               <p>Phone:</p>
-              <p>+1 234 5555–55–55</p>
+              <a>+1 234 5555–55–55</a>
             </div>
             <div class="contact__info__email">
               <p>Email:</p>
-              <p>hello@mymail.com</p>
+              <a>hello@mymail.com</a>
             </div>
-            <div class="contact__info__address">
+            <div>
               <p>Address:</p>
-              <p>400 First Ave, Suite 700, Minneapolis, MN 55401</p>
+              <address class="contact__info__address">
+                400 First Ave, Suite 700, Minneapolis, MN 55401
+              </address>
             </div>
           </div>
         </div>

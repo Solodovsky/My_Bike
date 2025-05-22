@@ -58,21 +58,22 @@
 
   &__info {
     display: flex;
+    font-weight: 500;
     flex-direction: column;
     max-width: 237px;
     gap: 24px;
     color: $color-white;
+    font-style: normal;
 
-    &__phone {
-      line-height: 140%;
-    }
+    // @media (max-width: 500px) {
+    //   margin: 0 auto;
+    // }
 
-    &__email {
-      line-height: 140%;
-    }
-
+    &__phone,
+    &__email,
     &__address {
-      line-height: 140%;
+      line-height: 180%;
+      font-style: normal;
     }
   }
 }

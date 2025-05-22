@@ -16,17 +16,14 @@ body {
   color: $color-white;
 }
 
-.menu-open {
-  overflow: hidden;
-}
-
 .landing {
   margin: 0 auto;
   max-width: 1260px;
   padding: 0 120px;
+  box-sizing: border-box;
 
-  @media (max-width: 768px) {
-    max-width: 768px;
+  @media (max-width: 744px) {
+    max-width: 744px;
     padding: 0 72px;
   }
 
